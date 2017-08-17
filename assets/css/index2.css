@@ -133,10 +133,13 @@ article p {
 .hours a {
   text-decoration: none;
   color: #f26522;
+  display: inline-flex;
+  width: 175px;
 }
 
 .map {
   width: 100%;
+  display: block;
 }
 
 footer {
