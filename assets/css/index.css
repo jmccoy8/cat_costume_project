@@ -1,5 +1,9 @@
 * {margin: 0; padding: 0;}
 
+body {
+  width: 100%
+}
+
 nav {
   height: 80px;
   max-width: 100%;
@@ -30,6 +34,7 @@ nav p {
   max-height: 100%;
 }
 
+
 main {
   max-width: 100%;
   max-height: auto;
@@ -40,6 +45,13 @@ main {
 .introp {
   width: 50%;
   margin: 0 auto 80px auto;
+}
+
+@media only screen and (max-width: 900px) {
+  .introp {
+    width: 100%;
+    margin: 0 auto 80px auto;
+  }
 }
 
 h1 {
@@ -80,6 +92,18 @@ p {
   margin-bottom: 80px;
 }
 
+@media only screen and (max-width: 1465px) {
+  .about {
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+
+}
+
 article {
   background-color: #eeeeee;
   display: inline-block;
@@ -87,6 +111,15 @@ article {
   width: 300px;
   height: 300px;
   margin-right: 60px;
+}
+
+@media only screen and (max-width: 900px) {
+  article {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+
+  }
 }
 
 article p {
@@ -100,6 +133,17 @@ article p {
   margin-right: 55px;
 }
 
+@media only screen and (max-width: 900px) {
+  .images {
+    margin: 0;
+
+  }
+  .catp {
+    margin: 0;
+    width: 30%;
+  }
+}
+
 .catp:last-child {
   margin-right: 0;
 }
@@ -110,6 +154,7 @@ article p {
   text-align: center;
   padding-bottom: 80px;
 }
+
 
 .touch h1 {
   padding-top: 80px;
@@ -124,6 +169,7 @@ article p {
   background-color: white;
   padding: 30px;
 }
+
 
 .hours h3 {
   text-align: left;
@@ -148,6 +194,7 @@ footer {
   height: 125px;
   margin-bottom: 0;
 
+
 }
 
 footer h1 {
@@ -161,3 +208,5 @@ footer h1 {
   justify-content: center;
   margin-bottom: 0;
 }
+
+@media screen and (max-width: 400px) {
